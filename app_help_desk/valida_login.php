@@ -12,8 +12,10 @@ $usuario_autenticado = false;
 
 //usuarios do sistema
 $usuarios_app = array(
-    array('email' => 'adm@teste.com.br', 'senha' => '123456'),
-    array('email' => 'user@teste.com.br', 'senha' => 'abcd')
+    array('id' => 1, 'email' => 'adm@teste.com.br', 'senha' => '1234'),
+    array('id' => 2, 'email' => 'user@teste.com.br', 'senha' => '1234'),
+    array('id' => 3, 'email' => 'jose@teste.com.br', 'senha' => '1234'),
+    array('id' => 4, 'email' => 'maria@teste.com.br', 'senha' => '1234')
 );
 // echo '<pre>';
 // print_r($usuarios_app);
@@ -26,6 +28,7 @@ foreach ($usuarios_app as $user) {
 
     if ($user['email'] == $_POST['email'] && $user['senha'] == $_POST['senha']) {
         $usuario_autenticado = true;
+        print_r($user);
     }
 
     if ($usuario_autenticado) {
@@ -33,10 +36,10 @@ foreach ($usuarios_app as $user) {
         $_SESSION['autenticado'] = 'SIM';
         $_SESSION['x'] = 'um valor';
         $_SESSION['y'] = 'outro valor';
-        header('Location: home.php');
+        //header('Location: home.php');
     } else {
         $_SESSION['autenticado'] = 'NAO';
-        header('Location: index.php?login=erro');
+        //header('Location: index.php?login=erro');
     }
 
     echo '<hr>';
