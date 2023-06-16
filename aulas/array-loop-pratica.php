@@ -84,19 +84,41 @@
     // }
 
 
-    $chapeuDePalha = array(
-        array('Tripulantes' => 'Nami'),
-        array('Tripulantes' => 'Zoro'),
-        array('Tripulantes' => 'Chopper')
-    );
+    // $chapeuDePalha = array(
+    //     array('Tripulantes' => 'Nami'),
+    //     array('Tripulantes' => 'Zoro'),
+    //     array('Tripulantes' => 'Chopper')
+    // );
 
-    echo '<pre>';
-    print_r($chapeuDePalha);
-    echo '</pre>';
+    // echo '<pre>';
+    // print_r($chapeuDePalha);
+    // echo '</pre>';
 
-    for ($idx = 0; $idx < count($chapeuDePalha); $idx++) {
-        echo $chapeuDePalha[$idx]['Tripulantes'] . '<br>';
-    }
+    // for ($idx = 0; $idx < count($chapeuDePalha); $idx++) {
+    //     echo $chapeuDePalha[$idx]['Tripulantes'] . '<br>';
+    // }
+
+    // $musicas = array('Tell Em', 'Hitchback', 'Miss the Rage', 'Collard Greens', 'My potna Dem');
+
+    // foreach ($musicas as $music) {
+
+    //     echo $music . '<br>';
+
+    //     if ($music == 'Collard Greens') {
+    //         echo $music . ' Essa é foda!' . '<br>';
+    //     }
+    // }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
