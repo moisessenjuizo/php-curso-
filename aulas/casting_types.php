@@ -7,24 +7,24 @@
 </head>
 
 <body>
-
     <?php
-    //gettype() -> retorna o valor da variavel
-    $valor = true;
-    // $valor2 = (int) $valor;
-    // $valor3 = 'Jose';
+    // Faça um array associativo com do/while.
 
-    $valor2 = (string) $valor;
+    $michael = array(
+        array('Cantor' => 'Michael', 'Musica' => 'Billie Jean'),
+        array('Cantor' => 'Michael', 'Musica' => 'Beat it'),
+        array('Cantor' => 'Michael', 'Musica' => 'Smooth Criminal'),
+        array('Cantor' => 'Michael', 'Musica' => 'Thriller'),
+        array('Cantor' => 'Michael', 'Musica' => 'Man In The Mirror'),
+        array('Cantor' => 'Michael', 'Musica' => 'Earth Song')
+    );
+
+    print_r($michael);
 
 
 
-    echo $valor . ' ' .  gettype($valor);
-    echo '<br>';
-    echo $valor2 . ' ' . gettype($valor2);
 
     ?>
-
-
 </body>
 
 </html>
